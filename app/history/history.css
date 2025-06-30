@@ -1,0 +1,344 @@
+/* Transaction history specific styles */
+
+/* Status badges */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-success {
+  background-color: rgba(22, 163, 74, 0.1);
+  color: rgb(22, 163, 74);
+}
+
+.status-pending {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: rgb(245, 158, 11);
+}
+
+.status-failed {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: rgb(220, 38, 38);
+}
+
+/* Transaction type icons */
+.transaction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background-color: rgba(246, 246, 245, 0.5);
+}
+
+/* Transaction table styles */
+.transaction-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.transaction-table th {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: left;
+  color: rgba(94, 73, 192, 0.7);
+  background-color: rgba(246, 246, 245, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.transaction-table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.transaction-row {
+  transition: background-color 0.2s ease;
+}
+
+.transaction-row:hover {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Hash display */
+.hash-display {
+  font-family: monospace;
+  color: rgba(94, 73, 192, 0.7);
+}
+
+/* Action buttons */
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: rgba(94, 73, 192, 0.7);
+}
+
+.action-button:hover {
+  background-color: rgba(94, 73, 192, 0.05);
+  color: rgba(94, 73, 192, 1);
+}
+
+/* Date and time display */
+.date-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-primary {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.date-secondary {
+  font-size: 0.75rem;
+  color: rgba(94, 73, 192, 0.6);
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Pagination controls */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: rgba(94, 73, 192, 0.1);
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Add these styles to improve the desktop filter tabs */
+.filter-tabs {
+  display: inline-flex;
+  background-color: rgba(246, 246, 245, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.filter-tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.filter-tab-active {
+  background-color: #5e49c0;
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-tab-inactive {
+  background-color: transparent;
+  color: rgba(94, 73, 192, 0.7);
+}
+
+.filter-tab-inactive:hover {
+  background-color: rgba(94, 73, 192, 0.05);
+  color: rgba(94, 73, 192, 1);
+}
+
+/* Improve the transaction history header */
+.history-header {
+  margin-bottom: 1.5rem;
+}
+
+.history-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #5e49c0;
+  margin-bottom: 1rem;
+}
+
+/* Improve the search box */
+.search-container {
+  position: relative;
+  width: 16rem;
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.75rem;
+  padding-left: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: rgba(94, 73, 192, 0.3);
+  box-shadow: 0 0 0 2px rgba(94, 73, 192, 0.1);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(94, 73, 192, 0.5);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Card styling */
+  .history-card {
+    border-radius: 1rem !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  /* Table adjustments */
+  .transaction-table th,
+  .transaction-table td {
+    padding: 0.75rem !important;
+  }
+
+  /* Simplified table for mobile */
+  .mobile-transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mobile-transaction-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+  }
+
+  .mobile-transaction-item:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .mobile-transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .mobile-transaction-type {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .mobile-transaction-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background-color: rgba(246, 246, 245, 0.5);
+  }
+
+  .mobile-transaction-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mobile-transaction-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  }
+
+  .mobile-transaction-label {
+    color: rgba(94, 73, 192, 0.6);
+  }
+
+  .mobile-transaction-value {
+    font-weight: 500;
+  }
+
+  .mobile-transaction-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+  }
+
+  /* Tab styling */
+  .mobile-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .mobile-tabs::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+
+  .mobile-tab {
+    flex: 0 0 auto;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+
+  .mobile-tab-active {
+    background-color: rgba(94, 73, 192, 1);
+    color: white;
+  }
+
+  .mobile-tab-inactive {
+    background-color: rgba(246, 246, 245, 0.5);
+    color: rgba(94, 73, 192, 0.7);
+  }
+
+  /* Search bar */
+  .mobile-search {
+    margin-bottom: 1rem;
+  }
+}

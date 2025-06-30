@@ -1,0 +1,87 @@
+/* Mobile responsive fixes */
+
+@media (max-width: 640px) {
+  /* Card padding adjustments */
+  .sushi-card {
+    padding: 1rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  /* Input fields */
+  .token-input {
+    padding: 0.75rem !important;
+  }
+
+  /* Font size adjustments */
+  h2.text-2xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  /* Token amount inputs */
+  .token-input input.text-2xl {
+    font-size: 1.125rem !important;
+  }
+
+  /* Balance text */
+  .text-gray-500 {
+    font-size: 0.75rem !important;
+  }
+
+  /* Button height and padding */
+  button.h-12,
+  button.h-14 {
+    height: 2.5rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  /* Spacing between elements */
+  .space-y-4 {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Token selector buttons */
+  .token-selector-button {
+    height: 2rem !important;
+    padding: 0 0.5rem !important;
+  }
+
+  /* Dialog content padding and sizing */
+  .dialog-content {
+    padding: 0.75rem !important;
+    max-width: 90vw !important;
+  }
+
+  /* Footer and navbar adjustments */
+  footer,
+  nav {
+    padding: 0.5rem 0 !important;
+  }
+
+  /* General button and icon size reductions */
+  .lucide {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  /* Make connect wallet button match swap button on mobile */
+  .md\:hidden button {
+    width: auto !important;
+    height: 2.5rem !important;
+    padding: 0 1rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.5rem !important;
+    font-weight: 500 !important;
+  }
+
+  /* Adjust container width on very small screens */
+  .container {
+    max-width: 92% !important;
+  }
+
+  /* Make mobile menu more compact */
+  .mobile-menu {
+    padding: 0.5rem 1rem !important;
+  }
+}
